@@ -39,6 +39,14 @@ function convertCurrency(amount, price, symbol) {
     // Exibindo a cotação da moeda selecionada
     description.textContent = `${symbol} 1 = ${formatCurrencyBRL(price)}`
 
+    let total = amount * price
+
+    // Formatar o valor total
+    total = formatCurrencyBRL(total).replace('R$', '')
+
+    // Exibir o resultado total
+    result.textContent = `${total} Reais`
+
     // Aplica a classe que exibe o resultado no footer
     footer.classList.add("show-result")
   } catch (error) {
