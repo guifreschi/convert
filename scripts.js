@@ -51,7 +51,7 @@ function convertCurrency(amount, price, symbol) {
     footer.classList.add("show-result")
   } catch (error) {
     // Remove a classe que exibe o resultado no footer
-    footer.classList.remove("sjow-result")
+    footer.classList.remove("show-result")
 
     console.log(error)
     alert("Não foi possível realizar a conversão.")
